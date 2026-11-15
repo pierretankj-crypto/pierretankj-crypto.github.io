@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pierre Tan · AI & Data Engineering</title>
+  <meta name="description" content="Pierre Tan, AI and data engineering student at Nanyang Polytechnic. Uses AI to build creative projects: an AI email and calendar assistant, a voice-first second brain and an offline-first finance app, plus a custom mechanical keyboard business.">
+  <link rel="canonical" href="https://pierretankj-crypto.github.io/">
+  <meta name="theme-color" content="#0b0907">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pierre Tan">
+  <meta property="og:url" content="https://pierretankj-crypto.github.io/">
+  <meta property="og:title" content="Pierre Tan · AI & Data Engineering">
+  <meta property="og:description" content="AI and data engineering student at Nanyang Polytechnic, Singapore. AI assistants, data projects and a custom keyboard business. Open to internships.">
+  <meta property="og:image" content="https://pierretankj-crypto.github.io/share.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Pierre Tan, AI and data engineering portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://pierretankj-crypto.github.io/share.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230b0907'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%23d9a95b' stroke-width='2'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%23efe4cc' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
+  <script>
+    // Set state classes before first paint: JS on, reduced motion, loader already seen this session.
+    (function () {
+      // always start at the top: the intro plays from the cover, and a restored scroll position would land mid-page
+      if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+      var d = document.documentElement;
+      d.classList.add('js');
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce) d.classList.add('reduce-motion');
+      if (reduce) d.classList.add('no-loader');
+    })();
+  </script>
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Loader: a ring gear is machined and assembled into a full drive while the site loads,
+       then a green scan dissolves it into the hero. -->
+  <div class="loader" aria-hidden="true">
+    <canvas class="loader__gl"></canvas>
+    <div class="loader__top">
+      <span class="loader__kana" lang="ja">ピエール・タン</span>
+      <span class="loader__tag">Portfolio 2026 · Assembling</span>
+    </div>
+    <ol class="loader__log">
+      <li>Ring gear</li>
+      <li>Web and lightening holes</li>
+      <li>Hub and bearing</li>
+      <li>Shaft and splines</li>
+      <li>Drive flanges</li>
+      <li>Assembled</li>
+    </ol>
+    <div class="loader__bottom">
+      <span class="loader__name">Pierre Tan</span>
+      <span class="loader__count"><span class="loader__num">000</span><span class="loader__pct">%</span></span>
+    </div>
+    <button class="loader__skip" type="button" tabindex="-1">Skip intro</button>
+  </div>
+
+  <header class="nav" data-nav>
+    <div class="wrap nav__inner">
+      <a class="nav__mark" href="#top" aria-label="Pierre Tan, back to top">
+        <span class="nav__mono">P<i>T</i></span>
+        <span class="nav__word">Pierre Tan</span>
+      </a>
+      <nav class="nav__links" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#work">Projects</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn--ghost btn--sm nav__cv" href="./Pierre_Tan_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="menu" id="menu" hidden data-lenis-prevent>
+      <nav class="wrap menu__inner" aria-label="Menu">
+        <a href="#about"><span>01</span>About</a>
+        <a href="#work"><span>02</span>Projects</a>
+        <a href="#showcase"><span>03</span>Showcase</a>
+        <a href="#experience"><span>04</span>Experience</a>
+        <a href="#contact"><span>05</span>Contact</a>
+        <a href="./Pierre_Tan_Resume.pdf" target="_blank" rel="noopener"><span>PDF</span>Résumé</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" id="top" aria-labelledby="hero-name">
+      <div class="hero__stage" aria-hidden="true">
+        <img class="hero__still" src="/src/assets/img/aura-still.webp" alt="" width="1200" height="675">
+        <img class="hero__profile" src="/src/assets/img/profile-cutout.webp" alt="" width="1280" height="1136">
+        <canvas class="hero__gl"></canvas>
+      </div>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <p class="hero__tate" lang="ja" aria-hidden="true">ＡＩで、創る。</p>
+      <p class="hero__scan" aria-hidden="true"><i></i><span class="when-hover">Hover me to scan · click to break apart</span><span class="when-touch">Tap me</span></p>
+
+      <div class="wrap hero__inner">
+        <div class="hero__row">
+          <div class="hero__meta" data-rise>
+            <p class="hero__kana" lang="ja">ピエール・タン</p>
+            <p class="hero__role">AI &amp; Data Engineering<br>Nanyang Polytechnic, graduating 2028</p>
+          </div>
+          <div class="hero__pitch" data-rise>
+            <p>I use AI to build creative projects: an assistant that triages a real inbox, a second brain you can talk to and a finance app that blooms when you reach a goal.</p>
+            <div class="hero__actions">
+              <a class="btn btn--solid" href="#work">View projects</a>
+              <a class="btn btn--ghost" href="./Pierre_Tan_Resume.pdf" target="_blank" rel="noopener">Open résumé</a>
+            </div>
+          </div>
+        </div>
+        <h1 class="hero__name" id="hero-name" aria-label="Pierre Tan">
+          <span class="hero__line" aria-hidden="true"><span class="hero__word">Pierre</span></span>
+          <span class="hero__line" aria-hidden="true"><span class="hero__word">Tan</span></span>
+        </h1>
+      </div>
+      <div class="hero__status" data-rise>
+        <p><span class="dot" aria-hidden="true"></span>Open to internships · Singapore</p>
+        <button class="motion-btn" type="button" data-motion-toggle aria-pressed="false" aria-label="Pause background animation">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><rect class="i-pause" x="4" y="3" width="2.5" height="10" rx="0.5"/><rect class="i-pause" x="9.5" y="3" width="2.5" height="10" rx="0.5"/><path class="i-play" d="M5 3.2v9.6L13 8z"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============================== ABOUT ============================== -->
+    <section class="about section" id="about" aria-labelledby="about-h">
+      <span class="sec-kanji" lang="ja" aria-hidden="true">創造</span>
+      <div class="wrap about__grid">
+        <div class="about__media">
+          <button class="holo" type="button" aria-pressed="false" aria-describedby="holo-hint">
+            <span class="sr-only">Show my alter ego</span>
+            <img class="holo__photo" src="/src/assets/img/portrait-card.webp" alt="Pierre Tan in a navy suit, white shirt and round glasses" width="700" height="933">
+            <canvas class="holo__gl" aria-hidden="true"></canvas>
+            <span class="holo__hud" aria-hidden="true">
+              <span class="holo__corner holo__corner--tl"></span>
+              <span class="holo__corner holo__corner--tr"></span>
+              <span class="holo__corner holo__corner--bl"></span>
+              <span class="holo__corner holo__corner--br"></span>
+              <span class="holo__tag holo__tag--top">Alter ego <b>· 01</b></span>
+              <span class="holo__tag holo__tag--bottom"><span class="holo__state">Standby</span><span class="holo__deg">000°</span></span>
+            </span>
+          </button>
+          <p class="holo__hint" id="holo-hint"><span class="when-hover">Move over the photo to scan it, click for the full projection</span><span class="when-touch">Drag across the photo to scan it, tap for the full projection</span></p>
+        </div>
+
+        <div class="about__text">
+          <p class="kicker"><span>01</span>About<i class="kicker__jp" lang="ja" aria-hidden="true">自己紹介</i></p>
+          <h2 id="about-h" class="h2">Hello, I'm Pierre.</h2>
+          <p class="jp-type" lang="ja" aria-hidden="true">こんにちは、ピエールです。</p>
+          <p class="lead" data-scrub>I use AI to turn ideas into creative projects. I bring the idea, the taste and the direction, and tools like Claude Code help me build it far faster than I could alone.</p>
+          <p data-scrub>That is how a Gmail assistant got a glowing orb, a second brain learned to talk back, and a finance app learned to bloom. I study AI and data engineering at Nanyang Polytechnic, and selling keyboards on TikTok taught me to start every project by asking who it is for.</p>
+          <dl class="facts">
+            <div><dt>Based in</dt><dd>Singapore</dd></div>
+            <div><dt>Graduating</dt><dd>2028 (expected)</dd></div>
+            <div class="wide"><dt>Studying</dt><dd>Diploma in AI &amp; Data Engineering, Nanyang Polytechnic</dd></div>
+            <div class="wide"><dt>Coursework</dt><dd>Programming, Applied Machine Learning, Data Engineering (IoT), Data Visualisation, Data Security</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== PROJECTS ============================== -->
+    <section class="work section" id="work" aria-labelledby="work-h">
+      <span class="sec-kanji" lang="ja" aria-hidden="true">創作</span>
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="kicker"><span>02</span>Projects<i class="kicker__jp" lang="ja" aria-hidden="true">作品</i></p>
+          <h2 id="work-h" class="h2">Built on my own time</h2>
+          <p class="sec-sub">Three projects I dreamed up and built with AI, from the first idea to the final polish.</p>
+        </header>
+
+        <article class="proj" aria-labelledby="p1-h">
+          <div class="proj__text">
+            <p class="proj__no">01<i class="proj__jp" lang="ja" aria-hidden="true">秘書</i></p>
+            <h3 class="proj__title" id="p1-h">Chief of Staff</h3>
+            <p class="proj__kind">AI email &amp; calendar assistant</p>
+            <p class="proj__sum">Reads Gmail and Google Calendar, sorts every email into Reply, Delegate, Archive or FYI, saves reply drafts back to Gmail and preps each meeting before it starts.</p>
+            <ul class="proj__points">
+              <li>Claude must answer in a strict JSON schema, which the server merges with live Gmail and Calendar data, so the model cannot invent an email or a meeting.</li>
+              <li>OAuth tokens encrypted with AES-256-GCM, HMAC-signed HttpOnly cookies, CSRF protection, per-user daily quotas and prompt-injection hardening.</li>
+              <li>An hourly GitHub Actions job calls a secret-protected serverless endpoint to send the morning and evening briefs.</li>
+            </ul>
+            <ul class="tags" aria-label="Built with">
+              <li>Node.js</li><li>Claude API</li><li>Google OAuth 2.0</li><li>Upstash Redis</li><li>GitHub Actions</li><li>Vercel</li>
+            </ul>
+            <div class="proj__actions">
+              <button class="btn btn--solid btn--sm" type="button" data-project="chief" aria-haspopup="dialog">Read the case study<span aria-hidden="true">→</span></button>
+              <a class="link" href="https://chief-of-staff-web-five.vercel.app" target="_blank" rel="noopener">Open the live demo<span class="link__arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <button class="proj__visual proj__screen" type="button" data-screen="chief" data-project="chief" aria-haspopup="dialog"></button>
+        </article>
+
+        <article class="proj proj--flip" aria-labelledby="p2-h">
+          <div class="proj__text">
+            <p class="proj__no">02<i class="proj__jp" lang="ja" aria-hidden="true">第二の脳</i></p>
+            <h3 class="proj__title" id="p2-h">ZENOTH</h3>
+            <p class="proj__kind">Voice-first second brain</p>
+            <p class="proj__sum">A voice assistant that writes every conversation and note into an Obsidian vault, then pulls the relevant notes back in as context for the next answer.</p>
+            <ul class="proj__points">
+              <li>A rule-based router classifies each request in under 1 ms with no model call: simple requests go to rules, light tasks to Claude Haiku, heavy jobs to background Claude Code sessions.</li>
+              <li>An 8-endpoint FastAPI bridge for vault access, chat, background jobs, speech-to-text and text-to-speech, token-protected and bound to localhost.</li>
+              <li>Speech runs locally, with faster-whisper listening and Kokoro speaking.</li>
+            </ul>
+            <ul class="tags" aria-label="Built with">
+              <li>JavaScript</li><li>Python</li><li>FastAPI</li><li>Claude API</li><li>faster-whisper</li><li>Kokoro</li>
+            </ul>
+            <div class="proj__actions">
+              <button class="btn btn--solid btn--sm" type="button" data-project="zenoth" aria-haspopup="dialog">Read the case study<span aria-hidden="true">→</span></button>
+            </div>
+          </div>
+          <button class="proj__visual proj__screen" type="button" data-screen="zenoth" data-project="zenoth" aria-haspopup="dialog"></button>
+        </article>
+
+        <article class="proj" aria-labelledby="p3-h">
+          <div class="proj__text">
+            <p class="proj__no">03<i class="proj__jp" lang="ja" aria-hidden="true">家計簿</i></p>
+            <h3 class="proj__title" id="p3-h">Petal Finance</h3>
+            <p class="proj__kind">Offline-first finance tracker (PWA)</p>
+            <p class="proj__sum">An installable app for budgets, savings goals and net worth that keeps working with no connection, in about 3,800 lines of framework-free code.</p>
+            <ul class="proj__points">
+              <li>A custom SVG chart engine with no chart library: donut, line, column and bar charts with tooltips and animated transitions.</li>
+              <li>CSV export and a Ctrl+K command palette for every action.</li>
+              <li>Stored data sanitised, user input escaped against XSS, WCAG AA contrast and full keyboard navigation.</li>
+            </ul>
+            <ul class="tags" aria-label="Built with">
+              <li>JavaScript</li><li>SVG</li><li>Service Workers</li><li>PWA</li>
+            </ul>
+            <div class="proj__actions">
+              <button class="btn btn--solid btn--sm" type="button" data-project="petal" aria-haspopup="dialog">Read the case study<span aria-hidden="true">→</span></button>
+              <a class="link" href="https://pierretankj-crypto.github.io/petal-finance/?demo" target="_blank" rel="noopener">Open the live demo<span class="link__arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <button class="proj__visual proj__screen" type="button" data-screen="petal" data-project="petal" aria-haspopup="dialog"></button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Scroll-driven type band between Projects and the Showcase -->
+    <div class="band" aria-hidden="true">
+      <div class="band__row" data-band="-1"><span>Chief of Staff <i>✦</i> ZENOTH <i>✦</i> Petal Finance <i>✦</i> Chief of Staff <i>✦</i> ZENOTH <i>✦</i> Petal Finance <i>✦</i></span></div>
+      <div class="band__row band__row--jp" data-band="-1" lang="ja"><span>人工知能 <i>✦</i> 創造 <i>✦</i> 自動化 <i>✦</i> 音声 <i>✦</i> 記憶 <i>✦</i> 設計 <i>✦</i> 人工知能 <i>✦</i> 創造 <i>✦</i> 自動化 <i>✦</i> 音声 <i>✦</i> 記憶 <i>✦</i> 設計 <i>✦</i></span></div>
+      <div class="band__row band__row--outline" data-band="1"><span>Python <i>✦</i> Claude API <i>✦</i> FastAPI <i>✦</i> Node.js <i>✦</i> SQL <i>✦</i> Power BI <i>✦</i> Python <i>✦</i> Claude API <i>✦</i> FastAPI <i>✦</i> Node.js <i>✦</i></span></div>
+    </div>
+
+    <!-- ============================== SHOWCASE ============================== -->
+    <section class="showcase section" id="showcase" aria-labelledby="showcase-h">
+      <span class="sec-kanji sec-kanji--left" lang="ja" aria-hidden="true">実績</span>
+      <div class="wrap">
+        <header class="showcase__head">
+          <p class="kicker"><span>03</span>Showcase<i class="kicker__jp" lang="ja" aria-hidden="true">展示</i></p>
+          <h2 id="showcase-h" class="h2">Portfolio showcase</h2>
+          <p class="sec-sub">Case studies from my diploma and an industry brief, the certificates and results I have earned, and the tools I build with.</p>
+        </header>
+
+        <div class="tabs" role="tablist" aria-label="Showcase">
+          <span class="tabs__ink" aria-hidden="true"></span>
+          <button class="tab" type="button" role="tab" id="tab-cases" aria-controls="panel-cases" aria-selected="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>Case studies
+          </button>
+          <button class="tab" type="button" role="tab" id="tab-certs" aria-controls="panel-certs" aria-selected="false" tabindex="-1">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 13.5L7 21l5-2.5 5 2.5-1.5-7.5"/></svg>Certificates
+          </button>
+          <button class="tab" type="button" role="tab" id="tab-awards" aria-controls="panel-awards" aria-selected="false" tabindex="-1">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v5a5 5 0 0 1-10 0V4zM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4M12 14v4M8 21h8M9.5 18h5"/></svg>Achievements
+          </button>
+          <button class="tab" type="button" role="tab" id="tab-stack" aria-controls="panel-stack" aria-selected="false" tabindex="-1">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5zM3 13l9 5 9-5M3 17.5l9 5 9-5"/></svg>Tech stack
+          </button>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-cases" aria-labelledby="tab-cases" tabindex="0">
+          <div class="cards" data-cases></div>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-certs" aria-labelledby="tab-certs" tabindex="0" hidden>
+          <div class="cards cards--two">
+            <article class="card card--cert">
+              <a class="card__img card__img--sheet" href="./certs/sdg-open-hack.webp" target="_blank" rel="noopener" aria-label="Open the SDG Open Hack certificate full size">
+                <img src="./certs/sdg-open-hack-card.webp" alt="SDG Open Hack certificate of completion awarded to Pierre Tan Kai Jun, Nanyang Polytechnic, 23 to 24 September 2026" width="720" height="720" loading="lazy" decoding="async">
+              </a>
+              <div class="card__body">
+                <h3 class="card__title">SDG Open Hack, Nanyang Polytechnic</h3>
+                <p class="card__desc">Certificate of completion from a global hackathon for the 17 UN Sustainable Development Goals, held at NYP on 23–24 September 2026 with UNITAR as learning partner.</p>
+                <div class="card__foot"><span class="card__meta">Sep 2026 · NYP</span><span class="card__chip">Completion</span></div>
+              </div>
+            </article>
+            <article class="card card--cert">
+              <div class="card__img card__img--cert" aria-hidden="true">
+                <div class="cert"><span class="cert__seal"></span><span class="cert__kind">Competition entry · 2026</span><span class="cert__name">Huawei Tech4City</span></div>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Huawei Tech4City Competition 2026</h3>
+                <p class="card__desc">Entered Huawei Singapore's Tech4City 2026 competition with a team proposal for a technology solution.</p>
+                <div class="card__foot"><span class="card__meta">Huawei Singapore</span><span class="card__chip">Competition</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-awards" aria-labelledby="tab-awards" tabindex="0" hidden>
+          <div class="cards cards--two">
+            <button class="card card--stat" type="button" data-biz="keygalore" aria-haspopup="dialog">
+              <span class="card__img card__img--stat" aria-hidden="true"><span class="stat">S$10K<sup>+</sup></span></span>
+              <span class="card__body">
+                <span class="card__title">Keygalore: S$10,000+ in gross revenue</span>
+                <span class="card__desc">I founded Keygalore to build and sell custom mechanical keyboards on TikTok and Carousell, and grew it past S$10,000 in gross revenue.</span>
+                <span class="card__foot"><span class="card__meta">Founder · Keygalore</span><span class="card__btn">See the proof <span aria-hidden="true">→</span></span></span>
+              </span>
+            </button>
+            <button class="card card--stat" type="button" data-biz="keygalore" aria-haspopup="dialog">
+              <span class="card__img card__img--stat" aria-hidden="true"><span class="stat">183K</span></span>
+              <span class="card__body">
+                <span class="card__title">183K views from 374 followers</span>
+                <span class="card__desc">I film the short videos that sell the keyboards. The best one reached 183K views from an account with 374 followers.</span>
+                <span class="card__foot"><span class="card__meta">Keygalore · TikTok</span><span class="card__btn">See the proof <span aria-hidden="true">→</span></span></span>
+              </span>
+            </button>
+            <button class="card card--stat" type="button" data-biz="trendy" aria-haspopup="dialog">
+              <span class="card__img card__img--stat" aria-hidden="true"><span class="stat">50<sup>+</sup></span></span>
+              <span class="card__body">
+                <span class="card__title">Trendy Traders: 50+ products sold</span>
+                <span class="card__desc">My online retail shop on Carousell and Shopee. I sourced, listed and sold more than 50 products, handling pricing, enquiries and delivery.</span>
+                <span class="card__foot"><span class="card__meta">Founder · Trendy Traders</span><span class="card__btn">See the proof <span aria-hidden="true">→</span></span></span>
+              </span>
+            </button>
+            <article class="card card--stat">
+              <div class="card__img card__img--stat" aria-hidden="true"><span class="stat stat--word">VIA</span></div>
+              <div class="card__body">
+                <h3 class="card__title">VIA Leader, Yuying Secondary School</h3>
+                <p class="card__desc">Helped plan community events as a Values in Action leader, including an elderly care visit to St. Luke's.</p>
+                <div class="card__foot"><span class="card__meta">Leadership</span><span class="card__chip">Community</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-stack" aria-labelledby="tab-stack" tabindex="0" hidden>
+          <div class="stack-grid" data-stack></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== EXPERIENCE ============================== -->
+    <section class="exp section" id="experience" aria-labelledby="exp-h">
+      <span class="sec-kanji" lang="ja" aria-hidden="true">経験</span>
+      <div class="wrap exp__grid">
+        <header class="sec-head exp__head">
+          <p class="kicker"><span>04</span>Experience<i class="kicker__jp" lang="ja" aria-hidden="true">経歴</i></p>
+          <h2 id="exp-h" class="h2">Where I've worked and studied</h2>
+          <p class="sec-sub">Every job so far, and both shops I started, put me in front of customers. That is where I learned to keep an explanation short and close the sale.</p>
+        </header>
+
+        <div class="timeline" data-timeline>
+          <div class="timeline__rail" aria-hidden="true"><span class="timeline__fill"></span></div>
+          <svg class="timeline__gear" viewBox="-50 -50 100 100" aria-hidden="true"><g class="gear-rot"></g></svg>
+          <ol class="timeline__list">
+            <li class="tl">
+              <p class="tl__date">Now · expected 2028</p>
+              <h3 class="tl__title">Nanyang Polytechnic</h3>
+              <p class="tl__role">Diploma in AI &amp; Data Engineering</p>
+              <p class="tl__body">Programming, applied machine learning, data engineering for IoT, data visualisation and data security. The case studies above come from these modules.</p>
+            </li>
+            <li class="tl">
+              <p class="tl__date">My own business</p>
+              <h3 class="tl__title">Keygalore <span>· TikTok &amp; Carousell</span></h3>
+              <p class="tl__role">Founder, custom mechanical keyboards</p>
+              <p class="tl__body">Grew a custom keyboard shop past S$10,000 in gross revenue. I film the short videos that sell them, and the best one reached 183K views from an account with 374 followers.</p>
+            </li>
+            <li class="tl">
+              <p class="tl__date">My own business</p>
+              <h3 class="tl__title">Trendy Traders <span>· Carousell &amp; Shopee</span></h3>
+              <p class="tl__role">Founder, online retail</p>
+              <p class="tl__body">Sourced, listed and sold more than 50 products, handling the pricing, customer enquiries and delivery myself.</p>
+            </li>
+            <li class="tl">
+              <p class="tl__date">Sep 2026 – Present</p>
+              <h3 class="tl__title">Grab <span>· Singapore</span></h3>
+              <p class="tl__role">Delivery Partner</p>
+              <p class="tl__body">More than 300 deliveries with a 5-star rating and zero negative reviews, planning time-sensitive orders on my own.</p>
+            </li>
+            <li class="tl">
+              <p class="tl__date">Jun 2025</p>
+              <h3 class="tl__title">Tuas Power <span>· Singapore</span></h3>
+              <p class="tl__role">Roadshow Sales Promoter</p>
+              <p class="tl__body">Promoted electricity plans and handled renewals at roadshows, signing up as many as 10 new customers in a single day.</p>
+            </li>
+            <li class="tl">
+              <p class="tl__date">Nov – Dec 2024</p>
+              <h3 class="tl__title">Magnolia <span>· Singapore</span></h3>
+              <p class="tl__role">Door-to-Door Sales Promoter, commission only</p>
+              <p class="tl__body">Knocked on more than 100 doors a day and closed 5 to 10 sales a day, adjusting the pitch to each household.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CONTACT ============================== -->
+    <section class="contact section" id="contact" aria-labelledby="contact-h">
+      <span class="sec-kanji sec-kanji--left" lang="ja" aria-hidden="true">ご縁</span>
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="wrap contact__inner">
+        <p class="kicker"><span>05</span>Contact<i class="kicker__jp" lang="ja" aria-hidden="true">連絡</i></p>
+        <p class="jp-type" lang="ja" aria-hidden="true">よろしくお願いします。</p>
+        <h2 id="contact-h" class="contact__h">Let's make something together.</h2>
+        <p class="contact__sub">I'm open to internships in AI, data engineering and full-stack work. Email is the fastest way to reach me.</p>
+        <div class="contact__mail">
+          <a class="contact__email" href="mailto:pierretankj@gmail.com">pierretankj@gmail.com</a>
+          <button class="btn btn--ghost btn--sm copy" type="button" data-copy="pierretankj@gmail.com">Copy email</button>
+        </div>
+        <ul class="contact__links">
+          <li><a class="link" href="https://www.linkedin.com/in/pierre-tan-19165b371" target="_blank" rel="noopener">LinkedIn<span class="link__arrow" aria-hidden="true">↗</span></a></li>
+          <li><a class="link" href="https://github.com/pierretankj-crypto" target="_blank" rel="noopener">GitHub<span class="link__arrow" aria-hidden="true">↗</span></a></li>
+          <li><a class="link" href="./Pierre_Tan_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)<span class="link__arrow" aria-hidden="true">↗</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p>© 2026 Pierre Tan</p>
+      <p>Singapore · Three.js, GSAP, Vite</p>
+      <p class="footer__jp" lang="ja">ご覧いただき、ありがとうございます。</p>
+      <a class="link" href="#top">Back to top<span class="link__arrow" aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <dialog class="sheet" aria-labelledby="sheet-title" data-lenis-prevent>
+    <div class="sheet__content">
+      <div class="sheet__bar">
+        <p class="sheet__crumb"></p>
+        <button class="sheet__close" type="button" aria-label="Close case study"><span></span><span></span></button>
+        <span class="sheet__progress" aria-hidden="true"></span>
+      </div>
+      <article class="sheet__body"></article>
+    </div>
+  </dialog>
+
+  <p class="toast" role="status" aria-live="polite"></p>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

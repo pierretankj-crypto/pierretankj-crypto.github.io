@@ -1,0 +1,13 @@
+node_modules
+dist
+.DS_Store
+*.log
+tools/resume/.browser-profile
+
+# Kept on this machine only: raw screenshots (with customer details), source videos,
+# originals and working notes. The site builds without them.
+reference/
+HANDOFF.md
+.claude/
+src/assets/raw/
+src/assets/source/
